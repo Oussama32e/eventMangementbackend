@@ -18,8 +18,9 @@ import com.sec.model.Admin;
 import com.sec.services.AdminCrudImplement;
 
 @RestController
+@RequestMapping("/admin")
 @Transactional
-@RequestMapping("admin")
+@CrossOrigin(origins = "http://localhost:4200")
 public class AdminController {
 @Autowired
 AdminCrudImplement adminapi;
